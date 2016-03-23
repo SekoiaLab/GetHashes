@@ -1,0 +1,33 @@
+﻿<Window x:Class="GetHashes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GetHashes"
+        mc:Ignorable="d"
+        Title="GetHashes by SEKOIA" Width="Auto" Height="Auto" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.1*"/>
+            <ColumnDefinition Width="8.9*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Margin="0,5,0,0">MD5:</Label>
+        <TextBox x:Name="md5textbox" Grid.Row="0" Grid.Column="1" Margin="0,5,5,0" Text="" HorizontalAlignment="Stretch" IsReadOnly="True"/>
+        <Label Grid.Row="1" Grid.Column="0" Margin="0,5,0,0">SHA1:</Label>
+        <TextBox x:Name="sha1textbox" Grid.Row="1" Grid.Column="1" Margin="0,5,5,0" Text="" HorizontalAlignment="Stretch" IsReadOnly="True"/>
+        <Label Grid.Row="2" Grid.Column="0" Margin="0,5,0,0">SHA256:</Label>
+        <TextBox x:Name="sha256textbox" Grid.Row="2" Grid.Column="1" Margin="0,5,5,0" Text="" HorizontalAlignment="Stretch" IsReadOnly="True"/>
+        <Label Grid.Row="3" Grid.Column="0" Margin="0,5,0,0">SHA512:</Label>
+        <TextBox x:Name="sha512textbox" Grid.Row="3" Grid.Column="1" Margin="0,5,5,0" Text="" HorizontalAlignment="Stretch" IsReadOnly="True"/>
+        <Label Grid.Row="4" Grid.Column="0" Margin="0,5,0,0">SSDEEP:</Label>
+        <TextBox x:Name="ssdeeptextbox" Grid.Row="4" Grid.Column="1" Margin="0,5,5,5" Text="" HorizontalAlignment="Stretch" IsReadOnly="True"/>
+    </Grid>
+</Window>
